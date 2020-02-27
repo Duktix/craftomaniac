@@ -94,11 +94,11 @@ body{
 .logo img {
     max-height: 90px;
 }
-.navbar-custom{
-	padding: 5px 0px;
+.navbar-custom {
+    padding: 5px 0px;
 }
-.navbar-right {
-    margin-top: 22px;
+.navbar-right{
+margin-top: 20px;
 }
 
 	.button_10990618{-webkit-transition: all .2s ease-in-out;-moz-transition: all .2s ease-in-out;-o-transition: all .2s ease-in-out;transition: all .2s ease-in-out;background-color:rgba(204,204,204,0);background-image:none;color:#000000;font-family:Scada;font-size:18px;line-height:30px;letter-spacing:3px;text-transform:uppercase;border-left-width:2px;border-right-width:2px;border-top-width:2px;border-bottom-width:2px;border-style:solid;border-color:#000000;padding-left:35px;padding-right:35px;padding-top:10px;padding-bottom:10px;display:inline-block;}.button_10990618:hover{background-color:rgba(204,204,204,0);background-image:none;color:rgb(243,79,101);font-family:Scada;font-size:18px;line-height:30px;letter-spacing:3px;text-transform:uppercase;border-left-width:2px;border-right-width:2px;border-top-width:2px;border-bottom-width:2px;border-style:solid;border-color:rgb(243,79,101);padding-left:35px;padding-right:35px;padding-top:10px;padding-bottom:10px;}
