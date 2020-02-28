@@ -31,7 +31,14 @@
   	<link href="http://www.craftomaniac.in/assets/theme.css" rel="stylesheet">
   
 	<style>
-		</style>
+	  body{
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  body.pageloaded{
+    opacity: 1;
+  }
+	</style>
 
 		
 	<script>
@@ -54,6 +61,7 @@
 		jQuery(window).stellar({
 			horizontalScrolling: false
 		});
+    $('body').addClass('pageloaded');
 	})
 	</script>
 	<style>
