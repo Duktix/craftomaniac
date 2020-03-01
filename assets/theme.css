@@ -79,11 +79,87 @@ body{
 															font-weight:300;
 																			}
 						
+	.navbar-toggle{
+		background-color:rgba(0,0,0,1);
+	}
+	.navbar-custom .navbar-nav li a{
+		background-color:rgba(255,255,255,0);
+		color:rgba(0,0,0,1);
+		font-size:15px;
+		
+
+		
+		padding-left:5px;
+		padding-right:5px;
+		padding-top:10px;
+		padding-bottom:10px;
+		margin-left:10px;
+		margin-right:10px;
+		margin-top:5px;
+		margin-bottom:5px;
+
+		border-style:solid;
+		border-left-width:0;
+		border-right-width:0;
+		border-top-width:0;
+		border-bottom-width:0;
+		
+		
+		
+		
+	}
+	.navbar-custom .navbar-nav li:hover > a{
+		background-color:rgba(255,255,255,0);
+		color:rgba(0,0,0,0.5);
+	}
+	.navbar-custom .nav>li>a:focus, .navbar-custom .nav>li>a:hover, .navbar-custom .navbar-nav li.active a{
+		background-color:rgba(255,255,255,0);
+		color:rgba(0,0,0,0.5);
+	}
+	.navbar-custom .navbar-nav li ul.sub-menu li a{
+		background-color:rgba(255,255,255,0);
+		color:rgba(0,0,0,1);
+		font-size:15px;
+		
+		
+		padding-left:5px;
+		padding-right:5px;
+		padding-top:10px;
+		padding-bottom:10px;
+		
+		
+		
+		
+		border-style:solid;
+		border-left-width:0;
+		border-right-width:0;
+		border-top-width:0;
+		border-bottom-width:0;
+		
+		
+		
+		
+	}
+	.navbar-custom .navbar-nav li ul.sub-menu li:hover > a{
+		background-color:rgba(255,255,255,0);
+		color:rgba(0,0,0,0.5);
+	}
+	.navbar-custom .nav li ul.sub-menu li a:focus, .navbar-custom .nav li ul.sub-menu li.active a{
+		background-color:rgba(255,255,255,0);
+		color:rgba(0,0,0,0.5);
+	}
+
+	@media (max-width: 768px){
+		.navbar-collapse{
+			background-color:rgba(0,0,0,0);
+		}
+	}
+
 	.is-overlay .is-overlay-bg{
--webkit-transition: all 2s ease-out;
-  -moz-transition: all 2s ease-out;
-  -o-transition: all 2s ease-out;
-  transition: all 2s ease-out;
+-webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 .navbar-custom .navbar-nav li a {
     text-transform: uppercase;
@@ -112,36 +188,11 @@ margin-top: 20px;
 		padding-top:0;
 		padding-bottom:0;
 	}
-.navbar-toggle{
-	background-color:rgba(0,0,0,1);
-}
+
 .header3 .slide-toggle span,.header4 .slide-toggle span{
 	
 }
-.navbar-custom .navbar-nav li a{
-	background-color:rgba(255,255,255,0);
-	color:rgba(0,0,0,1);
-}
-.navbar-custom .navbar-nav li:hover > a{
-	background-color:rgba(255,255,255,0);
-	color:rgba(0,0,0,0.5);
-}
-.navbar-custom .nav>li>a:focus, .navbar-custom .nav>li>a:hover, .navbar-custom .navbar-nav li.active a{
-	background-color:rgba(255,255,255,0);
-	color:rgba(0,0,0,0.5);
-}
-.navbar-custom .navbar-nav li ul.sub-menu li a{
-	background-color:rgba(255,255,255,0);
-	color:rgba(0,0,0,1);
-}
-.navbar-custom .navbar-nav li ul.sub-menu li:hover > a{
-	background-color:rgba(255,255,255,0);
-	color:rgba(0,0,0,0.5);
-}
-.navbar-custom .nav li ul.sub-menu li a:focus, .navbar-custom .nav li ul.sub-menu li.active a{
-	background-color:rgba(255,255,255,0);
-	color:rgba(0,0,0,0.5);
-}
+
 .sticky-wrapper.is-sticky .navbar-custom{
 	background-color:#ffffff;
 }
@@ -154,9 +205,4 @@ margin-top: 20px;
 .header3 .sliding .sliding-menu,.header4 .sliding .sliding-menu{
 	background-color:#eaeaea;
 	color:#000000;
-}
-@media (max-width: 768px){
-	.navbar-collapse{
-		background-color:rgba(0,0,0,0);
-	}
 }

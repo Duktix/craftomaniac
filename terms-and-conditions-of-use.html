@@ -21,7 +21,7 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 <link href="http://www.craftomaniac.in/assets/theme/Default/css/style.css" rel="stylesheet">
-<link rel="icon" href="http://www.craftomaniac.in/uploads/2020/02/cropped-ci6j0g.png" type="image/png" sizes="16x16">
+<link rel="icon" href="http://www.craftomaniac.in/uploads/2020/03/fav_1965523797.png" type="image/png" sizes="16x16">
 
 
 		
@@ -31,14 +31,15 @@
   	<link href="http://www.craftomaniac.in/assets/theme.css" rel="stylesheet">
   
 	<style>
-	  body{
+	
+    body{
     opacity: 0;
     transition: opacity 1s;
   }
   body.pageloaded{
     opacity: 1;
   }
-	</style>
+  	</style>
 
 		
 	<script>
@@ -55,13 +56,22 @@
 	<script>
 	jQuery(document).ready(function(){
 		jQuery('.is-parallax').each(function(){
-            jQuery(this).attr("data-stellar-background-ratio", "0.5");
-			jQuery(this).attr("data-stellar-vertical-offset", '0');
+      jQuery(this).attr("data-stellar-background-ratio", jQuery(this).attr('data-background-ratio'));
+			jQuery(this).attr("data-stellar-vertical-offset", jQuery(this).attr('data-vertical-offset'));
 		})
 		jQuery(window).stellar({
 			horizontalScrolling: false
 		});
     $('body').addClass('pageloaded');
+    $('[data-link]').each(function(){
+        if(jQuery(this).data('link')!=''){
+          var target = '_self';
+          if(jQuery(this).data('target')){
+            target = '_blank';
+          }
+          jQuery(this).append('<a href="'+jQuery(this).data('link')+'" target="'+target+'" class="box_link">&nbsp;</a>')
+        }
+    })
 	})
 	</script>
 	<style>
@@ -69,7 +79,7 @@
 		display: none;
 	}
 	</style>
-		
+	
 	</head>
 <body class="page-3 header1">
 	<div id="fb-root"></div>
@@ -92,7 +102,7 @@ role="navigation" >
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand logo" href="index.html">
-												<img src="http://www.craftomaniac.in/uploads/2020/02/logo_26270962.png" class="img-responsive">
+												<img src="http://www.craftomaniac.in/uploads/2020/03/logo copy_1070760262.png" class="img-responsive">
 											</a>
 				</div>
 				<div class="navbar-collapse collapse " id="navbar-menu">
@@ -301,11 +311,12 @@ jQuery(document).ready(function(){
 						<div class="widget form_widget form_widget_5">
 		<!-- Hubspot -->
 				<!-- Hubspot -->
+		<div class="row">
+			<div class="col-sm-12"><div class="alert alert-success collapse" id="form_5_success"></div></div>
+		</div>
+		<form class="row" id="form_5" method="post"
+
 		
-		<div class="alert alert-success collapse" id="form_5_success"></div>
-		<form id="form_5" method="post" 
-		
-				
 		>
 								  <div class="form-group col-sm-12 
 				  				  				  ">
@@ -331,14 +342,14 @@ jQuery(document).ready(function(){
 															<textarea type="text" class="form-control placeholder" name='field_3566' id="field_3566" placeholder=""></textarea>
 										<div class="help"></div>
 									  </div>
-								
+				
+
+				<!-- Hubspot -->
 				
 				<!-- Hubspot -->
-								
-				<!-- Hubspot -->
-				<input type="hidden" class="form-control" name="logo" value="http://www.craftomaniac.inhttp://www.craftomaniac.in/uploads/2020/02/logo_26270962.png">
+				<input type="hidden" class="form-control" name="logo" value="http://www.craftomaniac.inhttp://www.craftomaniac.in/uploads/2020/03/logo copy_1070760262.png">
 				<input type="hidden" class="form-control" name="url" value="http://www.craftomaniac.in">
-				<input type="hidden" class="form-control" name="newsletter" value="http://www.craftomaniac.in/newsletter/form_5_email">
+				<input type="hidden" class="form-control" name="message_body" value="No Message">
 				<div class="form-group col-sm-12 text-left">
 				<button type="submit" class="btn btn-default ">Submit</button>
 				</div>
@@ -435,11 +446,11 @@ jQuery(document).ready(function(){
 									},
 					},
 		submitHandler: function(form) {
+
 			
-						
 							jQuery.ajax({
 						type: "POST",
-						url: "http://mx.frezit.com",
+						url: "https://mx.frezit.com",
 						data: { data: jQuery('#form_5').serialize(), adminmail:'Craftomaniac1@gmail.com', recipients:'Craftomaniac1@gmail.com', from: 'info@craftomaniac.in', fromname: 'CraftoManiac', subject:'Requesting Quote', replyto:'' },
 						dataType: "text",
 						success: function(resultData){
@@ -448,7 +459,7 @@ jQuery(document).ready(function(){
 																	jQuery('#form_5').find('button[type="submit"]').prop('disabled', true);
 									jQuery('#form_5_success').html('Please wait...');
 									jQuery('#form_5_success').addClass('in');
-									setTimeout(function(){ 
+									setTimeout(function(){
 										jQuery('#form_5_success').hide();
 										jQuery('#form_5_success').html('Thank you for your submission.');
 										jQuery('#form_5_success').fadeIn();
@@ -458,8 +469,8 @@ jQuery(document).ready(function(){
 															}
 						}
 				});
-						
 			
+
 		}
 	});
 })
