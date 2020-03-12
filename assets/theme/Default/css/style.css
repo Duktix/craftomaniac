@@ -1359,6 +1359,7 @@ position:absolute;right:10px;bottom:10px;width:400px;margin:0
 
 .navbar-toggle {
   font-size: 30px;
+  margin-right:0;
 }
 
 .navbar-custom .btn-custom {
@@ -1376,7 +1377,6 @@ position:absolute;right:10px;bottom:10px;width:400px;margin:0
 }
 
 .sticky-wrapper.is-sticky .navbar-custom {
-	padding: 10px 0px !important;
   background-color: #5d9cec;
 }
 
