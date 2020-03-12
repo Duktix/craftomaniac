@@ -68,9 +68,6 @@
     },
     resizer = function() {
       windowHeight = $window.height();
-	  var stickyElement = $(this);
-	  var stickyWrapper = stickyElement.parent();
-      stickyWrapper.css('height', stickyElement.outerHeight());
     },
     methods = {
       init: function(options) {
@@ -94,7 +91,7 @@
           }
 
           var stickyWrapper = stickyElement.parent();
-          stickyWrapper.css('height', stickyElement.outerHeight());
+          stickyWrapper.css('height', stickyElement.outerHeight()-stickyElement.find('#navbar-menu').height());
           sticked.push({
             topSpacing: o.topSpacing,
             bottomSpacing: o.bottomSpacing,
