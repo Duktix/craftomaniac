@@ -68,6 +68,9 @@
     },
     resizer = function() {
       windowHeight = $window.height();
+	  var stickyElement = $(this);
+	  var stickyWrapper = stickyElement.parent();
+      stickyWrapper.css('height', stickyElement.outerHeight());
     },
     methods = {
       init: function(options) {
