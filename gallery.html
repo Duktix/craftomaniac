@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-			<title>Gallery - CraftoManiac</title>
+			<title>Gallery</title>
 		<meta name="keywords" content=""/>
 		<meta name="description" content=""/>
 	
@@ -96,19 +96,19 @@
 	role="navigation" >
 	<div class="container-fluid">
 				<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12 valign">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
 					<a class="navbar-brand logo" href="/">
 												<img src="http://www.craftomaniac.in/uploads/2020/03/logo copy_1070760262.png" class="img-responsive">
 											</a>
 				</div>
-				<div class="navbar-collapse collapse " id="navbar-menu">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="navbar-collapse collapse  valign-mobile-row-break" id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="menu-item"><a class="nav-link " href="home" target="_self"> Home</a><small></small></li><li class="menu-item"><a class="nav-link " href="about" target="_self"> ABOUT</a><small></small></li><li class="menu-item"><a class="nav-link " href="gallery" target="_self"> Gallery</a><small></small></li></li><li class="menu-item"><a class="nav-link " href="contact" target="_self"> CONTACT</a><small></small></li>
 					</ul>
@@ -160,7 +160,7 @@
 				">
 			<div class="row">
 			<figure class="effect-lily" style="
-			background:rgba(0,0,0,0.31);
+			background:rgba(0,0,0,1);
 			border:5px solid;
 			color:rgba(255,255,255,1);
 			border-color:rgba(255,255,255,1);
@@ -178,7 +178,7 @@
 				">
 			<div class="row">
 			<figure class="effect-lily" style="
-			background:rgba(0,0,0,0.31);
+			background:rgba(0,0,0,1);
 			border:5px solid;
 			color:rgba(255,255,255,1);
 			border-color:rgba(255,255,255,1);
@@ -196,7 +196,7 @@
 				">
 			<div class="row">
 			<figure class="effect-lily" style="
-			background:rgba(0,0,0,0.31);
+			background:rgba(0,0,0,1);
 			border:5px solid;
 			color:rgba(255,255,255,1);
 			border-color:rgba(255,255,255,1);
@@ -214,7 +214,7 @@
 				">
 			<div class="row">
 			<figure class="effect-lily" style="
-			background:rgba(0,0,0,0.31);
+			background:rgba(0,0,0,1);
 			border:5px solid;
 			color:rgba(255,255,255,1);
 			border-color:rgba(255,255,255,1);
@@ -232,7 +232,7 @@
 				">
 			<div class="row">
 			<figure class="effect-lily" style="
-			background:rgba(0,0,0,0.31);
+			background:rgba(0,0,0,1);
 			border:5px solid;
 			color:rgba(255,255,255,1);
 			border-color:rgba(255,255,255,1);
@@ -250,7 +250,7 @@
 				">
 			<div class="row">
 			<figure class="effect-lily" style="
-			background:rgba(0,0,0,0.31);
+			background:rgba(0,0,0,1);
 			border:5px solid;
 			color:rgba(255,255,255,1);
 			border-color:rgba(255,255,255,1);
@@ -268,7 +268,7 @@
 				">
 			<div class="row">
 			<figure class="effect-lily" style="
-			background:rgba(0,0,0,0.31);
+			background:rgba(0,0,0,1);
 			border:5px solid;
 			color:rgba(255,255,255,1);
 			border-color:rgba(255,255,255,1);
@@ -286,7 +286,7 @@
 				">
 			<div class="row">
 			<figure class="effect-lily" style="
-			background:rgba(0,0,0,0.31);
+			background:rgba(0,0,0,1);
 			border:5px solid;
 			color:rgba(255,255,255,1);
 			border-color:rgba(255,255,255,1);
@@ -304,7 +304,7 @@
 				">
 			<div class="row">
 			<figure class="effect-lily" style="
-			background:rgba(0,0,0,0.31);
+			background:rgba(0,0,0,1);
 			border:5px solid;
 			color:rgba(255,255,255,1);
 			border-color:rgba(255,255,255,1);
@@ -322,7 +322,7 @@
 				">
 			<div class="row">
 			<figure class="effect-lily" style="
-			background:rgba(0,0,0,0.31);
+			background:rgba(0,0,0,1);
 			border:5px solid;
 			color:rgba(255,255,255,1);
 			border-color:rgba(255,255,255,1);
@@ -376,6 +376,34 @@
 
 	})
 	</script>
+	
+		<style>
+	.isotope_gallery_widget_7 .grid figure:before {
+		content: "";
+		background: rgba(0,0,0,0.31);
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 9;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+			}
+			.isotope_gallery_widget_7 .grid figure:hover:before{
+			opacity:0;
+		}
+		
+	</style>
+		
+		<style>
+	.isotope_gallery_widget_7:after{
+		background: rgba(0,0,0,1);
+	}
+	</style>
+		
 			<script type="text/javascript" src="http://www.craftomaniac.in/assets/js/jquery.magnific-popup.min.js"></script>
 	<script>
 	 jQuery(document).ready(function($) {

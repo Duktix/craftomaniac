@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-			<title>Home - CraftoManiac</title>
+			<title>Home</title>
 		<meta name="keywords" content=""/>
 		<meta name="description" content=""/>
 	
@@ -96,19 +96,19 @@
 	role="navigation" >
 	<div class="container-fluid">
 				<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12 valign">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
 					<a class="navbar-brand logo" href="/">
 												<img src="http://www.craftomaniac.in/uploads/2020/03/logo copy_1070760262.png" class="img-responsive">
 											</a>
 				</div>
-				<div class="navbar-collapse collapse " id="navbar-menu">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="navbar-collapse collapse  valign-mobile-row-break" id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="menu-item"><a class="nav-link " href="home" target="_self"> Home</a><small></small></li><li class="menu-item"><a class="nav-link " href="about" target="_self"> ABOUT</a><small></small></li><li class="menu-item"><a class="nav-link " href="gallery" target="_self"> Gallery</a><small></small></li></li><li class="menu-item"><a class="nav-link " href="contact" target="_self"> CONTACT</a><small></small></li>
 					</ul>
@@ -121,7 +121,7 @@
 
 
 <div id="is-wrapper" class="is-wrapper">
-			<div class="is-section is-box is-bg-light is-align-center is-section-auto">
+			<div class="is-section is-box is-bg-light is-align-center is-section-20">
 		<div class="is-overlay">
 			<div class="is-overlay-bg" style="background-image: url(&quot;http://admin.frezit.com/contentbuilder/contentbox/images/sample.jpg&quot;); display: none;"></div>
 			<div class="is-overlay-color" style="display: none;"></div>
@@ -129,9 +129,7 @@
 		</div>
 		<div class="is-boxes">
 			<div class="is-box-centered edge-y-0">
-				<div class="is-container is-builder container-fluid is-content-100" id="contentareauHfmXNN" style=""><div class="row">
-			<div class="col-md-12">
-				<div class="widget advanced_slider_widget advanced_slider_widget_1">
+				<div class="is-container is-builder container-fluid is-content-100" id="contentareauHfmXNN" style=""><div class="row"><div class="widget advanced_slider_widget advanced_slider_widget_1">
 		<div id="rev_slider_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classic4export" style="margin:0px auto;background-color:rgba(255,255,255,0);padding:0px;margin-top:0px;margin-bottom:0px;">
 			<div id="rev_slider_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
 				<ul>
@@ -399,8 +397,7 @@
 		})
 	});	/*ready*/
 	</script>
-			</div>
-		</div></div>
+</div></div>
 			</div>
 		</div>
 	<div class="is-arrow-down bounce"><a href="#"><i class="icon ion-ios-arrow-thin-down"></i></a></div></div>
@@ -501,8 +498,8 @@
 			    <a href="#" class="button_10990618 request-quote" title="">Request Quote</a>
 
 					</div>
-					<div class="col-md-4">
-						<img src="http://www.craftomaniac.in/uploads/2020/02/sample_452098230.png" alt="">
+					<div class="col-md-4 margin-t-1">
+						<img src="http://www.craftomaniac.in/uploads/2020/02/sample_452098230.png" alt="" draggable="false" style="margin: 0px; resize: none; position: relative; zoom: 1; display: inline; height: 440px; width: 360px; top: 0px; left: 0px;">
 					</div>
 				</div></div>
 		
@@ -614,7 +611,27 @@
 					</div>
 				</div>
 					</div>
-				<script type="text/javascript" src="http://www.craftomaniac.in/assets/js/jquery.magnific-popup.min.js"></script>
+				<style>
+		.image_scroller_widget_2 .grid figure:before {
+			content: "";
+			background: rgba(0,0,0,0.56);
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			z-index: 9;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+					}
+					.image_scroller_widget_2 .grid figure:hover:before{
+				opacity:0;
+			}
+				
+		</style>
+						<script type="text/javascript" src="http://www.craftomaniac.in/assets/js/jquery.magnific-popup.min.js"></script>
 		<script>
 		 jQuery(document).ready(function($) {
 				$('.image-popup').magnificPopup({
