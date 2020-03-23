@@ -79,8 +79,12 @@ function($) {
             $this.$topSection.css('height', windowHeight);
 
             //init sticky
-            $this.$stickyElem.sticky({topSpacing: 0});
+            $this.$stickyElem.sticky({topSpacing: 0, zIndex: 9999});
+
+
         });
+
+
 
         //Handling the resize event
         $(window).on('resize', function() {
@@ -95,7 +99,7 @@ function($) {
             } else {
                 $this.$backToTop.fadeOut();
             }
-        }); 
+        });
 
         //on click on navbar - Smooth Scroll To Anchor (requires jQuery Easing plugin)
         this.$topNavbar.on('click', function(event) {
@@ -104,7 +108,7 @@ function($) {
                 $('html, body').stop().animate({
                     scrollTop: $($anchor.attr('href')).offset().top - 0
                 }, 1500, 'easeInOutExpo');
-                event.preventDefault();    
+                event.preventDefault();
             }
         });
 

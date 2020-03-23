@@ -618,7 +618,6 @@ a:hover,a:focus,.a:active {
 .navbar-brand{
 	padding:0;
 }
-
 /* Back to top */
 .back-to-top {
   width: 30px;
@@ -816,6 +815,10 @@ a:hover,a:focus,.a:active {
 .logo img{
 	margin:0;
 	display:inline-block;
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 /*======= 4.Dropdown ======= */
 .dropdown-menu {
@@ -1319,10 +1322,10 @@ position:absolute;right:10px;bottom:10px;width:400px;margin:0
   z-index: 999;
   padding: 20px 0px;
   margin-bottom: 0px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .navbar-custom .navbar-nav li a {
@@ -1381,7 +1384,7 @@ position:absolute;right:10px;bottom:10px;width:400px;margin:0
 }
 
 .sticky-wrapper.is-sticky .navbar-custom .logo span.text-custom {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 
@@ -1847,7 +1850,9 @@ textarea.form-control {
   margin-bottom: 0;
 }
 
-
+.navbar{
+  border: 0;
+}
 
 
 /*======= 13. Responsive ======*/
@@ -1863,14 +1868,8 @@ textarea.form-control {
 
 @media (max-width: 767px) {
   .navbar-custom {
-    padding: 10px 0px !important;
+    padding: 10px 0px;
     background-color: #5d9cec;
-  }
-  .navbar-custom .logo span.text-custom {
-    color: #ffffff !important;
-  }
-  .navbar-btn {
-    margin: 8px 20px 0 !important;
   }
   .video-wrapper {
     padding-top: 50px;
@@ -1911,12 +1910,18 @@ textarea.form-control {
 }
 .navbar-brand{
 	height:auto;
+  margin-left: 0px !important;
+}
+.header2 .navbar .logo{
+	display: block;
+}
+.header2 .navbar .navbar-toggle{
+	float: none;
 }
 .header3 .slide-toggle,.header4 .slide-toggle{
 	display: inline-block;
     width: 30px;
 	    vertical-align: middle;
-	    margin-top: 20px;
 }
 .header3 .slide-toggle span,.header4 .slide-toggle span{
 	background: #1a1a1a;
@@ -1969,6 +1974,16 @@ textarea.form-control {
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+}
+.header4 .navbar-header{
+	padding-left: 50px;
+	position:relative;
+}
+.header4 .navbar-header .slide-toggle{
+	position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .header4 .sliding .sliding-menu{
 	right:auto;
@@ -2242,4 +2257,40 @@ textarea.form-control {
 .navbar-nav>li.menu-item> ul.sub-menu>li:hover ul.sub-menu{
 	opacity:1;
 	visibility: visible;
+}
+.valign{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.valign-col-1{
+	flex:1;
+}
+.valign-col-2{
+	flex:2;
+}
+.valign-col-3{
+	flex:3;
+}
+@media (max-width: 768px) {
+.valign-mobile-row-break{
+      flex-basis: 100%;
+}
+.valign-mobile-col-1{
+	flex:1;
+}
+.valign-mobile-col-2{
+	flex:2;
+}
+.valign-mobile-col-3{
+	flex:3;
+}
+.navbar-header {
+    padding-right: 15px;
+}
 }
